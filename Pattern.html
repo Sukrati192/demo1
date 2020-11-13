@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">        
+        <title>Program 1</title>
+        <style>
+            .header{
+                background-color:#259b9a;
+                color: white;
+                text-align: center;
+                padding: 25px;
+                font-family: 'Sansita Swashed', cursive;
+            }
+            .body{
+                background-color:white;
+                text-align: center;
+                padding: 25px;
+                font-family: 'Roboto', sans-serif;
+            }
+            .button {
+                background-color: #0d9edf;
+                padding: 10px;
+                color:white;
+            }
+        </style>
+    </head>
+    <body class="body">
+        <div class="header"> 
+            Name- Sukrati Agrawal<br>
+            Subject- Internet Technologies<br>
+            Roll No.- 1217<br>
+        </div>
+        <h1>Pattern Generation</h1>
+        <form action="http://localhost:8080/IT/Pattern.jsp" method="get">
+            Number of terms: <br><input type="number" name="terms" required><br><br>
+            <input class="button" type="submit" value="Print">
+        </form>
+        <div class="header">
+            <script>document.writeln("Execution Time- "+ new Date());</script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">        
+        <title>Program 11</title>
+        <style>
+            .header{
+                background-color:#fb9039;
+                color: white;
+                text-align: center;
+                padding: 25px;
+                font-family: 'Sansita Swashed', cursive;
+            }
+            .body{
+                background-color:#646c79;
+                text-align: center;
+                padding: 25px;
+                font-family: 'Roboto', sans-serif;
+            }
+            .button {
+                background-color: #1f3044;
+                padding: 10px;
+                color:white;
+            }
+        </style>
+    </head>
+    <body class="body">
+        <div class="header"> 
+            Name- Sukrati Agrawal<br>
+            Assignment- Internet Technologies<br>
+            Roll No.- 1217<br>
+        </div>
+        <h1>Bill Generation</h1>
+        <form action="http://localhost:8080/IT/Assign11.jsp" method="get">
+            Customer ID: <br><input type="text" name="cid" maxlength="4" required><br><br>
+            Name: <br><input type="text" name="name" required><br><br>
+            Address: <br><input type="text" name="addr" required><br><br>
+            Contact No: <br><input type="number" name="cno" pattern="[6-9]{1}[0-9]{9}" minlength="10" maxlength="10" required> <br><br>
+            Order ID: <br><input type="text" name="oid" maxlength="4" required><br><br>
+            List Items: <br>
+            T-Shirt:
+            <select name="tshirt" id="tshirt" required>
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            Jeans: 
+            <select name="jeans">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            Suit: 
+            <select name="suit">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            Saree:
+            <select name="saree">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br><br>
+            <input class="button" type="submit" value="Generate Bill">
+            <input class="button" type="reset"><br><br>
+        </form>
+        <div class="header">
+            <script>document.writeln("Date- "+ new Date());</script>
+        </div>
+    </body>
+</html>
